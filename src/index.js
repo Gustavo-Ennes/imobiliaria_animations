@@ -1,7 +1,6 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.130.0';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.130.0/examples/jsm/loaders/GLTFLoader.js';
 
-
 class Animation{
   constructor(width, heigth){
 
@@ -107,7 +106,7 @@ class Animation{
     const loader = new GLTFLoader();
     const self = this
 
-    loader.load( '../models/sign/scene.gltf', function ( gltf ) {
+    loader.load( 'https://storage.googleapis.com/static-threejs/imobiliaria/sign/scene.gltf', function ( gltf ) {
 
       self.sign = gltf.scene.children[0].children[0].children[0].children[0]
       self.sign.scale.set(.00005, .00005, .00005)
